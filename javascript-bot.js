@@ -13,11 +13,9 @@
             index < 16 ?
                 { action: 'shoot', metadata: {} } :
                 { action: 'smoke', metadata: { direction: smokeDirection } };
-
+    
     return {
         command,
-        state: {
-            hello: 'world'
-        }
+        state
     };
 });
